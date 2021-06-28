@@ -30,6 +30,7 @@ control 'core-plans-openjdk11-exists' do
   "jdb",
   "jdeprscan",
   "jdeps",
+  "jfr",
   "jhsdb",
   "jimage",
   "jinfo",
