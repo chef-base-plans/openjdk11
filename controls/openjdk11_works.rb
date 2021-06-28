@@ -44,6 +44,10 @@ control 'core-plans-openjdk11-works' do
       exit_pattern: /^[^0]{1}\d*$/,
     },
     "jdeps" => {},
+    "jfr" => {
+      command_suffix: "--help",
+      command_output_pattern: /Tool for working with Flight Recorder files/,
+    },
     "jhsdb" => {
       command_suffix: "--help",
       command_output_pattern: /clhsdb\s+command line debugger/,
