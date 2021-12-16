@@ -2,9 +2,9 @@ pkg_origin=core
 pkg_maintainer="The Habitat Maintainers <humans@habitat.sh>"
 pkg_name=openjdk11
 # NOTE: Retrieve download link and shasum from here: https://jdk.java.net/11/
-pkg_version=11.0.2
-pkg_source=https://download.java.net/java/GA/jdk11/9/GPL/openjdk-${pkg_version}_linux-x64_bin.tar.gz
-pkg_shasum=99be79935354f5c0df1ad293620ea36d13f48ec3ea870c838f20c504c9668b57
+pkg_version=11.0.13
+pkg_source=https://github.com/openjdk/jdk11u/archive/refs/tags/jdk-${pkg_version}-ga.tar.gz
+pkg_shasum=e98eb999aa5e85b330e4aa062567743e290dfe925c3fe854d9c6e2c55399da59
 pkg_filename=openjdk-${pkg_version}_linux-x64_bin.tar.gz
 pkg_dirname="jdk-${pkg_version}"
 pkg_license=("GPL-2.0-only")
