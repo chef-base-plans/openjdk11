@@ -21,7 +21,11 @@ pkg_deps=(
   core/xlib
   core/zlib
 )
-pkg_build_deps=(core/patchelf core/rsync)
+pkg_build_deps=(
+	core/patchelf
+       	core/rsync
+	core/autoconf
+)
 pkg_bin_dirs=(bin)
 pkg_lib_dirs=(lib)
 pkg_include_dirs=(include)
@@ -33,7 +37,11 @@ do_setup_environment() {
 }
 
 do_build() {
-  return 0
+	pushd "${source_dir}" || exit 1
+	bash configure
+	make images
+	./build/*/images/jdk/bin/java --version
+	popd
 }
 
 do_install() {
