@@ -7,8 +7,9 @@ pkg_maintainer="The Habitat Maintainers <humans@habitat.sh>"
 pkg_upstream_url=https://adoptium.net
 pkg_source=https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jdk_x64_linux_hotspot_11.0.13_8.tar.gz
 pkg_shasum=3b1c0c34be4c894e64135a454f2d5aaa4bd10aea04ec2fa0c0efe6bb26528e30
-pkg_dirname=jdk-${pkg_version}-src
+pkg_dirname=jdk-${pkg_version}
 pkg_deps=(
+	core/zlib
 )
 pkg_build_deps=(
 	core/rsync
