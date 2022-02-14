@@ -9,10 +9,12 @@ pkg_source=https://github.com/adoptium/temurin11-binaries/releases/download/jdk-
 pkg_shasum=3b1c0c34be4c894e64135a454f2d5aaa4bd10aea04ec2fa0c0efe6bb26528e30
 pkg_dirname=jdk-${pkg_version}
 pkg_deps=(
+  core/glibc
 	core/zlib
 )
 pkg_build_deps=(
 	core/rsync
+  core/patchelf
 )
 pkg_bin_dirs=(bin)
 pkg_lib_dirs=(lib)
